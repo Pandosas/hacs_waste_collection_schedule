@@ -79,13 +79,13 @@ class Source:
         entries = []
 
         entriesString = data["results"][0]["result"]["data"]["dsr"]["DS"][0]["PH"][0]["DM0"][0]["M0"]
-        dateEntries = entriesString.split(", ")
+        dateEntries = entriesString.replace('.','').split(", ")
 
         for collection_waste_object in dateEntries:
             entries.append(
                 Collection(
                     date=datetime.strptime(
-                        collection_waste_object["date"], "%Y-%m-%dT%H:%M:%S"
+                        collection_waste_object, "%Y-%m-%d"
                     ).date(),
                     t="antrinių žaliavų (popierius/plastikas)",
                     icon="mdi:recycle",
