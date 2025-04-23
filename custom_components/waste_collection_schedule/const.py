@@ -3,7 +3,7 @@
 from typing import Final
 
 # Component domain, used to store component data in hass data.
-DOMAIN: Final = "waste_collection_schedule"
+DOMAIN: Final = "waste_collection_schedule_test"
 
 UPDATE_SENSORS_SIGNAL: Final = "wcs_update_sensors_signal"
 

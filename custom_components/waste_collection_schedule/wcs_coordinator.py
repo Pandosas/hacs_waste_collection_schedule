@@ -112,9 +112,9 @@ class WCSCoordinator(DataUpdateCoordinator[dict[str, Any]]):
     def device_info(self):
         return DeviceInfo(
             identifiers={(const.DOMAIN, f"{self.shell.unique_id}")},
-            name="Waste Collection Schedule",
+            name="Waste Collection Schedule test",
             manufacturer=self.shell.title,
-            model="Waste Collection Schedule",
+            model="Waste Collection Schedule test",
             entry_type=DeviceEntryType.SERVICE,
         )
 

@@ -1,6 +1,6 @@
 {
-  "domain": "waste_collection_schedule",
-  "name": "Waste Collection Schedule",
+  "domain": "waste_collection_schedule_test",
+  "name": "Waste Collection Schedule Test",
   "codeowners": ["@mampfes"],
   "config_flow": true,
   "dependencies": [],
